@@ -1,0 +1,5 @@
+dom
+const ボタンを定義
+ document.getElementById('myButton')　どこにやるのか
+button.addEventListener('click', function () {
+    alert('ボタンがクリックされました！');　どう実行するのか

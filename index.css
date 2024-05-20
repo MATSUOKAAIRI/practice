@@ -1,0 +1,21 @@
+h1{
+  color : rgb(55, 0, 255);
+}
+body{
+  background-image: url("yyy.jpg");
+}
+p {
+  border-left :solid 5px orange;
+  border-bottom: solid 1px rgb(128, 128, 128);
+  padding: 10px;
+}
+.tateyama{
+  height: 200px;width: 500px;
+}
+.table,
+th,
+td,
+tr{
+  border: 2px solid;
+  border: ;
+}
