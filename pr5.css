@@ -1,0 +1,118 @@
+body {
+    width: 100%; /*幅いっぱい!の時は100%*/
+    height: 100vh;/*画面に対しての高さ*/
+    background: url("ai-generated-8698946_1280.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+  }
+   /*ヘッダー*/
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e6e6e6;
+ }
+ header {
+    width: 91%;
+    padding: 30px 4% 10px;
+    position: fixed;
+   top: 0;
+   display: flex;
+   align-items: center;
+ }
+ h1 {
+    margin: 0; padding: 0;
+    font-size: 30px;
+ }
+ a {	
+    text-decoration: none;
+    color: #000000;
+ }
+ ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+ }
+ li {
+    margin: 0 0 0 15px;
+    font-size: 120%;
+ }
+ nav {
+    margin: 0 0 0 auto;
+ }
+ 
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi{
+   display: flex;
+   flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+   margin:0 0 50px 0;
+   list-style: none;
+}
+
+.gnavi li a{
+   display: block;
+   padding:10px 30px;
+   text-decoration: none;
+   color: #333;
+}
+
+.gnavi li{
+   margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.gnavi li a{
+   /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+  color:#ffffff;
+}
+
+.gnavi li a::after {
+   content: '';
+   /*絶対配置で線の位置を決める*/
+   position: absolute;
+   bottom: 0;
+   left: 10%;
+   /*線の形状*/
+   width: 80%;
+   height: 2px;
+   background:#0481A2;
+   /*アニメーションの指定*/
+   transition: all .3s;
+   transform: scale(0, 1);/*X方向0、Y方向1*/
+   transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+   transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+ /*self produce*/
+ .TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:1}
+}
+.TextTyping {
+    font-size:  100px;    /* 文字サイズ指定 */
+    color: #ffffff;
+}

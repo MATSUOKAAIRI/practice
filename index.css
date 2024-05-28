@@ -1,8 +1,23 @@
 h1{
   color : rgb(55, 0, 255);
 }
-body{
-  background-image: url("yyy.jpg");
+html,body{
+	height: 200%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 200%;
+	height: 200%;
+	background-color:#e3d1ca;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:200%;
+	height: 200%;
 }
 p {
   border-left :solid 5px orange;
