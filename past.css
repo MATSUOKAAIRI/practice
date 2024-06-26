@@ -115,3 +115,32 @@ h2{
    vertical-align:middle;
    margin-left: 600px;
  }
+ /* フッター */
+.footer-2 {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 25px 10px 10px;
+}
+.footer-2__list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0 1.5em;
+   list-style-type: none;
+   margin: 0 0 .5em;
+   padding: .5em;
+}
+
+.footer-2__sns-icon {
+   width: 21px;
+   height: 21px;
+   color: #000000;
+}
+
+.footer-2__copyright {
+   margin: 0;
+   color: #000000;
+   font-weight: 200;
+   font-size: .8em;
+}
