@@ -131,15 +131,20 @@ p{
    padding: .5em;
 }
 
-.footer-2__sns-icon {
-   width: 21px;
-   height: 21px;
-   color: #000000;
-}
 
 .footer-2__copyright {
    margin: 0;
    color: #000000;
    font-weight: 200;
    font-size: .8em;
+}
+.x{
+   width: 21px;
+   height: 21px;
+   color: #000000;
+}
+.instagram{
+   width: 21px;
+   height: 21px;
+   color: #000000;
 }
